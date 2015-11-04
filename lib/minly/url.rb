@@ -1,7 +1,7 @@
 require "faraday"
 require "json"
 
-API_URL = "http://localhost:3000/"
+API_URL = "http://minly.herokuapp.com/"
 API_SHOW_ACTION = API_URL + "api/v1/requests/show/"
 
 module Minly
