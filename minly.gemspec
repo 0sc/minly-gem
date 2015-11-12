@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Minly::VERSION
   spec.authors       = ["Osmond Oscar"]
   spec.email         = ["oskarromero3@gmail.com"]
-
+  spec.description   = %q[Minly-gem provides access to all features of the Minly URL shortening service by integrating the Minly API. With the gem, you can effortlessly create and expand minlys; have access to the most popular minlys ever create and also the recent additions to the Minly database. Even features such as deleting, deactivating and editing minlys that are reserved for registered users of the Minly service can also be accessed using a valid token.]
   spec.summary       = %q{Gem to wrap minly url shortener api}
   spec.homepage      = "http://github.com/andela-ooranagwa/minly/"
   spec.license       = "MIT"
