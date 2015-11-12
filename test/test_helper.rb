@@ -11,5 +11,5 @@ require 'vcr'
 VCR.configure do |c|
   c.cassette_library_dir = "test/fixtures"
   c.hook_into :webmock
-  config.ignore_hosts 'codeclimate.com'
+  c.ignore_hosts 'codeclimate.com'
 end
