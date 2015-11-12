@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://minly.herokuapp.com/urls/test.json
+    body:
+      encoding: UTF-8
+      string: url%5Bactive%5D=false&url%5Borignal%5D=http%3A%2F%2Fbing.com&user_token=PbDVNQK77-Sfd0nLx9AD5mwWfx-Ca-Cu3HaAv3D3WbQ
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 12 Nov 2015 15:20:18 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ec08fc35943341535073c6709656d1f4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8e903dbc-bdb9-4767-89da-d3743016f43f
+      X-Runtime:
+      - '0.075310'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","status_info":"Url was updated successfully.","payload":{"id":12,"original":"http://minly.herokuapp.com","shortened":"test","active":false,"created_at":"2015-11-12T15:00:04.133Z","updated_at":"2015-11-12T15:20:19.635Z","views":0,"user_id":1}}'
+    http_version: 
+  recorded_at: Thu, 12 Nov 2015 15:20:19 GMT
+recorded_with: VCR 2.9.3

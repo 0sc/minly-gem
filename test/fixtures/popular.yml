@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://minly.herokuapp.com/api/v1/requests/show/popular/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 12 Nov 2015 13:17:29 GMT
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"69a000e4d019af94887cf6d7d371155d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 319ab0cd-479a-4df8-83b7-6808c62fc682
+      X-Runtime:
+      - '0.019198'
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","status_info":"Request was processed successfully.","payload":[{"id":1,"original":"http://bittorrent.com","shortened":"bit","active":true,"created_at":"2015-11-02T04:09:13.404Z","updated_at":"2015-11-10T16:16:03.114Z","views":3,"user_id":1},{"id":2,"original":"http://github.com","shortened":"git","active":true,"created_at":"2015-11-02T04:09:54.979Z","updated_at":"2015-11-02T04:11:02.275Z","views":1,"user_id":1},{"id":3,"original":"https://drive.google.com/drive/u/0/folders/0B1C3woZnW_mZTEZUc0hYaGJpakk","shortened":"3","active":true,"created_at":"2015-11-04T16:13:59.973Z","updated_at":"2015-11-04T16:13:59.992Z","views":0,"user_id":null},{"id":4,"original":"http://blog.arkency.com/2014/10/how-to-start-using-uuid-in-activerecord-with-postgresql","shortened":"cc","active":true,"created_at":"2015-11-10T16:20:14.834Z","updated_at":"2015-11-10T16:36:56.669Z","views":0,"user_id":2},{"id":5,"original":"https://nickcharlton.net/posts/mocking-web-requests-vcr-minitest.html","shortened":"5","active":true,"created_at":"2015-11-12T12:28:33.790Z","updated_at":"2015-11-12T12:28:33.790Z","views":0,"user_id":null}]}'
+    http_version: 
+  recorded_at: Thu, 12 Nov 2015 13:17:29 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://minly.herokuapp.com/api/v1/requests/show/expand/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 12 Nov 2015 11:55:26 GMT
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c438593d66af7acc1b151345ffb5db75"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6d4960d2-9219-47a7-aa1f-36618c208eb9
+      X-Runtime:
+      - '0.008961'
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","status_info":"Request was processed successfully.","payload":{"id":3,"original":"https://drive.google.com/drive/u/0/folders/0B1C3woZnW_mZTEZUc0hYaGJpakk","shortened":"3","active":true,"created_at":"2015-11-04T16:13:59.973Z","updated_at":"2015-11-04T16:13:59.992Z","views":0,"user_id":null}}'
+    http_version: 
+  recorded_at: Thu, 12 Nov 2015 11:55:27 GMT
+recorded_with: VCR 2.9.3
